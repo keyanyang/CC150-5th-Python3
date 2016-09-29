@@ -9,5 +9,5 @@ def reverse2(string):
 
 if __name__ == "__main__":
     print ("# 1.2")
-    print (reverse('pen apple'))
-    print (reverse2('pen apple'))
+    reverse('pen apple')
+    reverse2('pen apple')
