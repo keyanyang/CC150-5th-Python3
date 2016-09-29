@@ -11,7 +11,7 @@ def rotateleft():
         print (list(reversed(i)))
 
 def rotateright():    
-    uzx = list(zip(*x))    
+    uzx = list(zip(*x))    #list(zip(*matrix)) generate list including tuples
     for i in range(0,len(uzx)):
         print (list(uzx[-(i+1)]))
             
