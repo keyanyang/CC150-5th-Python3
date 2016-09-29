@@ -16,7 +16,7 @@ def rotateright():
         print (list(uzx[-(i+1)]))
             
 if __name__ == "__main__":
-    print ("# 1.5")
+    print ("# 1.6")
     print ('original image:')
     original()
     print ('rotate the image by 90 degree left:')
