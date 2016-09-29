@@ -12,4 +12,4 @@ def unique(string):
 
 if __name__ == "__main__":
     print ("# 1.1")
-    print (unique('ayaxbbcyc'))
+    unique('ayaxbbcyc')
