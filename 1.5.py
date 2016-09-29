@@ -24,3 +24,5 @@ if __name__ == "__main__":
     print ("# 1.5")
     print(compress('abc'))
     print(compress('avvvbbbbcc'))
+
+    #the idea of this coding is first set up a list, then count the number of certain letter, then append this letter and its number to the list, then convert the list to string. The first char, which is '', and the last count of char should be focused. 
