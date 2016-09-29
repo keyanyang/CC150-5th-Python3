@@ -8,4 +8,4 @@ def replace(str):
     
 if __name__ == "__main__":
     print ("# 1.4")
-    replace('You Know Nothing Mr John Snow')
+    replace('You Know Nothing John Snow')
