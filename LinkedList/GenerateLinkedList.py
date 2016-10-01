@@ -36,5 +36,5 @@ def randomLinkedList(leng, min, max):
         rll.addNode(value)
     return rll
 
-Test = randomLinkedList(5, 0, 100)
+test = randomLinkedList(5, 0, 100)
 print (test)
