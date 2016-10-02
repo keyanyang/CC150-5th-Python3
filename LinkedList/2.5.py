@@ -4,12 +4,12 @@ class Node:
         self.next = None
 
 class LinkedList:
-    def __init__(self):     #step1
+    def __init__(self):   
         self.head = None
         self.tail = None
     
-    def addNode(self, inse):        #step2
-        nde = Node(inse)       #node including .value and .next
+    def addNode(self, inse):       
+        nde = Node(inse)      
         if self.head == None:
             self.head = nde
             self.tail = nde
