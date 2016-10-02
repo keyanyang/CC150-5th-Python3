@@ -36,7 +36,6 @@ def randomLinkedList(leng, min, max):
         rll.addNode(value)
     return rll
 
-
 def partition(ll, x):
     p1 = ll.head
     p2 = ll.head.next
