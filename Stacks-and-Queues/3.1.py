@@ -44,9 +44,9 @@ array = arrayStacks(10,3)       #array=[None,...None] where there is 30 Nones
 print (array.push(2, 20))       #In stack2, the first value is 20
 print (array.push(2, 30))       #In stack2, the next value is 30
 print (array.push(4, 30))       #no stack4  
-print (array.pop(1))        #remove and show the latest value of stack 1, which should be empty 
-print (array.pop(2))        #remove and show the latest value of stack 2           
-print (array.showTop(2))        #show the current first value of stack2 
+print (array.pop(1))        #show and remove the latest value of stack 1, which should be empty 
+print (array.pop(2))        #show and remove the latest value of stack 2           
+print (array.showTop(2))        #show the current latest value of stack2 
 print (array.push(2, 10))
 print (array.showTop(2)) 
 print (array.push(0, 20))
