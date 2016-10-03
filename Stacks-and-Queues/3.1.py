@@ -1,4 +1,4 @@
-# Single arrey for three stacks
+# Single array for three stacks
 
 class arrayStacks:
     def __init__(self, stacksize, n):       #set up pointer[-1, -1, -1] and array[None, None, ..., None]
@@ -11,11 +11,11 @@ class arrayStacks:
         return stacknum * self.stacksize + self.pointer[stacknum]
 
     def push(self, stacknum, value):
-        if self.pointer[stacknum] + 1 >= self.stacksize:
-            return 'out of space'
-        else:
+        if self.pointer[stacknum] + 1 < self.stacksize:
             self.pointer[stacknum] += 1
             self.array[self.stacktop(stacknum)] = value
+        else:
+            return 'out of space'
     
     def pop(self, stacknum):
         if self.pointer[stacknum] < 0:
