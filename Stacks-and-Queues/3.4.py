@@ -6,7 +6,7 @@ class Hanoi:
     
     def moveDisks(self, size, fr, helper, to):
         if size == 1:
-            data = self.towers[fr].pop()
+            data = self.towers[fr].pop()        #remove and return the smallest disk in fr
             self.towers[to].append(data)
             print ('Disk {} from Tower{} to Tower{}'.format(data, fr, to))
         else:
