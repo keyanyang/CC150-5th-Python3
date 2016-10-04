@@ -11,15 +11,16 @@ class smin():
     def pop(self):
         if len(self.stack) == 0:
             return None
-        data = self.stack.pop()
+        data = self.stack[-1]
         if data == self.min[-1]:
             self.min.pop()
-        return data
+        self.stack.pop()
     
     def getmin(self):
         if len(self.min) == 0:
-            return None
-        print (self.min[-1])
+            print (None)
+        else:
+            print (self.min[-1])
     
 s = smin()
 from random import randrange
@@ -34,6 +35,6 @@ s.pop()
 s.pop()
 s.pop()
 s.pop()
+s.pop()
 print (s.stack)     #after a few pops, to see the list and the min
-s.getmin()
-    
+s.getmin()   
