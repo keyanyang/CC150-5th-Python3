@@ -11,9 +11,10 @@ class SetOfStacks:
     def pop(self):
         if len(self.stack) == 0:
             print ('empty stack cannot be popped')
-        if len(self.stack[-1]) == 0:
-            self.stack.pop()
-        self.stack[-1].pop()
+        else:
+            if len(self.stack[-1]) == 0:
+                self.stack.pop()
+            self.stack[-1].pop()
         
     def popAt(self, index):
         if index < 0 or index > (len(self.stack)-1) or len(self.stack[index]) == 0:
@@ -23,6 +24,7 @@ class SetOfStacks:
         
 #test    
 stacks = SetOfStacks(5)
+stacks.pop()        #try to pop when the stack is none
 for i in range(17):
     stacks.push(i)
 print(stacks.stack)
