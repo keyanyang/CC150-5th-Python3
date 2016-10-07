@@ -9,6 +9,10 @@ def height(node):
         return 0
     else:
         return max(height(node.left), height(node.right)) + 1
+
+#The left and right subtrees' heights differ by at most one, AND
+#The left subtree is balanced, AND
+#The right subtree is balanced
     
 def balance(bt):
     if bt == None:
