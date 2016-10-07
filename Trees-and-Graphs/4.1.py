@@ -14,7 +14,7 @@ def balance(bt):
     if bt == None:
         return True
     else:
-        return abs(height(bt.left) - height(bt.right)) <= 1
+        return balance(bt.left) and balance(bt.right) and abs(height(bt.left) - height(bt.right)) <= 1
 
 BT1 = bTree(1, bTree(2, bTree(4), bTree(5)), bTree(3))    
 print('The height of leftsubtree:')
