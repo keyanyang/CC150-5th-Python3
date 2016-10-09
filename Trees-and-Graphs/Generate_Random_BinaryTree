@@ -1,0 +1,17 @@
+class bTree:
+    def __init__(self, content, left, right):
+        self.content = content
+        self.left = left
+        self.right = right
+    
+    def __str__(self):
+        return '(' + str(self.content) + '(' + str(self.left) + '|' + str(self.right) +'))'
+
+import random
+def makebt(depth):
+    if depth <= 0:
+        return None
+    else:
+        return bTree(random.randrange(0,100), makebt(depth - 1), makebt(depth - 1))
+
+print (makebt(3))
