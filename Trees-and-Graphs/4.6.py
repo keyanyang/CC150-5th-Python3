@@ -31,7 +31,7 @@ def make_random_bsearch_tree(depth = 2, l = -10, r = 10, parent = None):
     tree.right = make_random_bsearch_tree(depth - 1, tree.content, r, tree)
     return tree
 
-def btl(bt):
+def btl(bt):        #just for observing the bst better
     if bt == None: return []
     ret = [[bt.content]]
     queue = [bt]
