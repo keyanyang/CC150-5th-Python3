@@ -1,4 +1,3 @@
-#binary tree python
 class BinaryTree:
     def __init__(self, content):
         self.content = content
@@ -7,8 +6,6 @@ class BinaryTree:
 
     def __str__(self):
         return "( " + str(self.content) + " ( " + str(self.left) + " | " + str(self.right) + "))" 
-
-#implement a function if a binary tree is a binary search tree
 
 def in_order_search(btree):     #make it list        #[] + [1] = [1]
     if btree is None: return []
