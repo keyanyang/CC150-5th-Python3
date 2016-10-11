@@ -12,7 +12,7 @@ def find_next_btree(bt):            #take the example of a 9-nodes binary search
     if bt is None: return None
     if bt.right is None:
         ret = bt.parent
-        if ret.content is not None and ret.content <= bt.content:
+        while ret is not None and ret.content <= bt.content:
             ret = ret.parent
         return ret
     else:
