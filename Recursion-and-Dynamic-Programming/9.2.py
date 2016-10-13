@@ -18,7 +18,6 @@ def showpath(x, y, list = []):
         showpath(x, y + 1, list)
 
     
-x = 2
-y = -2
+x, y = 2, -2
 print(path(x,y))
 showpath(x,y)
