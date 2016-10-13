@@ -1,13 +1,10 @@
-def stair(n, counter = [0]):         #counter = [0] here will not affect the increase of counter in the recursion
+def stair(n):
     if n == 0:
-        counter[0] += 1
+        return 1
     if n < 0 :
-        return 
+        return 0
     else:
-        stair(n-1, counter)
-        stair(n-2, counter)
-        stair(n-3, counter)
-    return counter[0]
+        return stair(n-1) + stair(n-2) + stair(n-3)
 
-n = 4
+n = 6
 print ('If staircase has {} steps, there would be {} possible ways.'.format(n, stair(n)))
